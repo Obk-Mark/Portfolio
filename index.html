@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Портфолио</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Привет, я Марк</h1>
-    <p>Веб-разработчик: HTML, CSS, Sass, JS, TypeScript</p>
-  </header>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <h1 class="header__title">Привет, я Марк</h1>
+                <p class="header__descr">Веб-разработчик: HTML, CSS, SCSS, JS, TS</p>
+            </div>
+        </div>
+    </header>
 
-  <section>
-    <h2>Мои проекты</h2>
-    <ul>
-        <!-- Страницы "Блок" и "Публикации" для Газпром.Тех -->
-      <li>
-        <strong>Blog & Publications Adaptive Site</strong> — Адаптивная вёрстка страниц "Блок" и "Публицкации" для сайта Газпром.Тех   
-        <br />
-        🔗 <a href="https://github.com/Obk-Mark/blog-publications-adaptive-site" target="_blank">Код</a> |
-        🌐 <a href="https://..." target="_blank">Демо</a>
-      </li>
-      <!-- Сайт "Элитный квартал Тишинский бульвар" для Whitemark -->
-      <li>
-        <strong>Tishinskiy Adaptive Site</strong> — Адаптивная вёрстка страницы "Элитный квартал Тишинский бульвар" для Whitemark
-        <br />
-        🔗 <a href="https://github.com/Obk-Mark/tishinsky-adaptive-site" target="_blank">Код</a> |
-        🌐 <a href="https://..." target="_blank">Демо</a>
-      </li>
-      <!-- Сайт-каталог светильников от Briaton -->
-      <li>
-        <strong>Briaton JS Integration Site</strong> — Интеграция JavaScipt для магазина светильников Briaton   
-        <br />
-        🔗 <a href="https://github.com/Obk-Mark/briaton-js-integration-site" target="_blank">Код</a> |
-        🌐 <a href="https://..." target="_blank">Демо</a>
-      </li>
-    </ul>
-  </section>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section__title">Мои проекты</h2>
+                <ul class="list">
+                    <!-- Страницы "Блок" и "Публикации" для Газпром.Тех -->
+                    <li class="card">
+                        <img class="card__img" src="./images/blog_page.png" alt="Скриншот страницы Блог">
+                        <div class="card__text">
+                            <h3 class="card__title">Blog & Publications Adaptive Site</h3>
+                            <span class="card__descr">— Адаптивная вёрстка страниц "Блок" и "Публицкации" для сайта
+                                Газпром.Тех</span>
+                            <div class="card__links">
+                                <span class="card__link">
+                                    🔗 <a href="https://github.com/Obk-Mark/blog-publications-adaptive-site"
+                                        target="_blank">Код</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Сайт "Элитный квартал Тишинский бульвар" для Whitemark -->
+                    <li class="card">
+                        <img class="card__img" src="./images/tishinsky_site.png"
+                            alt="Скриншот страницы Тишинский квартал">
+                        <div class="card__text">
+                            <h3 class="card__title">Tishinskiy Adaptive Site</h3>
+                            <span class="card__descr">— Адаптивная вёрстка страницы "Элитный квартал Тишинский бульвар"
+                                для Whitemark</span>
+                            <div class="card__links">
+                                <span class="card__link">
+                                    🔗 <a href="https://github.com/Obk-Mark/tishinsky-adaptive-site"
+                                        target="_blank">Код</a>
+                                </span>
+                                <span class="card__link">
+                                    🌐 <a href="https://Obk-Mark.github.io/tishinsky-adaptive-site"
+                                        target="_blank">Демо</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Сайт-каталог светильников от Briaton -->
+                    <li class="card">
+                        <img class="card__img" src="./images/briaton_site.png"
+                            alt="Скриншот страницы магазин светильников Briaton">
+                        <div class="card__text">
+                            <h3 class="card__title">Briaton JS Integration Site</h3>
+                            <span class="card__descr">— Интеграция JavaScipt для магазина светильников Briaton</span>
+                            <div class="card__links">
+                                <span class="card__link">
+                                    🔗 <a href="https://github.com/Obk-Mark/briaton-js-integration-site"
+                                        target="_blank">Код</a>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>Связаться через телеграм: @WebDevelopmentObk</p>
-  </footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer__text">Связаться через телеграм: <a class="footer__link"
+                        href="https://t.me/WebDevelopmentObk" target="_blank">@WebDevelopmentObk</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
