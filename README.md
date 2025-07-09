@@ -1,2 +1,2 @@
 # Portfolio
-My personal portfolio website
+Сайт - портфолио. Пока что накидал простенькую структуру, но в дальнейшем буду интегрировать React, PHP, PHP-Laravel
